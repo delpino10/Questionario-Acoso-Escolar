@@ -11,6 +11,7 @@
 }
 
 body{
+    padding: 50px 0;
     font-family: Poppins, sans-serif;
     display: flex;
     justify-content: center;
@@ -20,16 +21,19 @@ body{
 
 .container{
     max-width: 1200px;
-    height: 200vh;
+    height: 150vh;
     background: #dddddd;
     padding: 15px;
+    border-radius: 20px;
 }
 
 .container h1{
     text-align: center;
     margin: 20px 0;
-    padding: 50px 0;
-    font-size: 40px;
+    padding: 25px 0;
+    font-size: 50px;
+    background: var(--color-background);
+    border-radius: 20px;
 }
 
 .container p{
@@ -101,16 +105,18 @@ input:checked + label{
 }
 
 .btn-submit{
+    text-align: center;
     font-size: 20px;
     font-weight: 700;
     padding: 20px 70px;
-    margin: 30px 0;
+    margin: 0 auto;
     background: var(--color-active);
     color:white;
     outline: none;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    display: inline-block;
 }
 
 #resultado{
