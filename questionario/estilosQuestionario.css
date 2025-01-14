@@ -1,0 +1,152 @@
+:root{
+    --color-active:#FFA500;
+    --color-background: #eee;
+    --color-dark:#111;
+    --color-pregunta:#B0E0E6 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-background);
+}
+
+.container{
+    max-width: 1200px;
+    height: 200vh;
+    background: #dddddd;
+    padding: 15px;
+}
+
+.container h1{
+    text-align: center;
+    margin: 20px 0;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.container p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.pregunta{
+    margin: 30px 0;
+    background: var(--color-pregunta);
+    border-radius: 10px;
+    padding: 10px ;
+}
+
+.pregunta > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input{
+    display: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grupo-radio{
+    margin: 20px 0;
+}
+
+.radio-button{
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-button::after{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--color-active);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input:checked + label .radio-button::after{
+    opacity: 1;
+}
+
+input:checked + label{
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.grupo-checkbox{
+    margin: 20px 0;
+}
+
+.btn-submit{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 70px;
+    margin: 30px 0;
+    background: var(--color-active);
+    color:white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#resultado{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.grave{
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+}
+
+.medio{
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.leve{
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
